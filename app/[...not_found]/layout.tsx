@@ -1,4 +1,4 @@
-import type { Viewport } from 'next'
+// import type { Viewport } from 'next'
 
 export const viewport = {
     themeColor: "#ffffff", // Example color

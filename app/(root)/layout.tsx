@@ -2,7 +2,7 @@ import "./globals.css";
 import React, { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import type { Viewport } from 'next'
+// import type { Viewport } from 'next'
 const syne = Inter({
     subsets: ["latin"],
     display: "block",

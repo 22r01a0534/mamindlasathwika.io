@@ -16,9 +16,6 @@ const nextConfig = {
       pure: true,
     },
   },
-  devIndicators: {
-    position: "top-right", // ✅ Updated 'buildActivityPosition' to 'position'
-  },
   images: {
     remotePatterns: [
       {
