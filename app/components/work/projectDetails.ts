@@ -44,7 +44,7 @@ export const projects = [
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
         github: "https://github.com/22r01a0534",
         demo: "https://example2.app/",
-        image: "/projects/project2.png",
+        image: "public/projects/project2.png",
         available: true,
     },
 ];

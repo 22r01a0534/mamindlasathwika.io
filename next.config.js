@@ -6,6 +6,7 @@ const outputDir = process.env.BRANCH === 'dev' ? 'dev' : '.next';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: outputDir,
+  output: 'export',
   reactStrictMode: true,
   compiler: {
     reactRemoveProperties: isProduction,
@@ -16,7 +17,11 @@ const nextConfig = {
       pure: true,
     },
   },
+  experimental: {
+    // appDir: true
+  },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
