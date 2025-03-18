@@ -6,6 +6,7 @@ const outputDir = process.env.BRANCH === 'dev' ? 'dev' : '.next';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: outputDir,
+  reactStrictMode: true,
   compiler: {
     reactRemoveProperties: isProduction,
     removeConsole: isProduction,
@@ -16,18 +17,16 @@ const nextConfig = {
     },
   },
   devIndicators: {
-    buildActivityPosition: "top-right",
+    position: "top-right", // ✅ Updated 'buildActivityPosition' to 'position'
   },
-  experimental: {
-    // legacyBrowsers: true,
-    // swcFileReading: true,
-    // appDir: true,
-  },
-  optimizeFonts: true,
-  productionBrowserSourceMaps: isProduction,
-  swcMinify: !isProduction,
   images: {
-    domains: ["raw.githubusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/22r01a0534/mamindlasathwika.io/main/public/images/**',
+      },
+    ],
   },
 };
 

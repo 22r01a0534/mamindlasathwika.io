@@ -47,7 +47,7 @@
     "leva": "^0.9.35",
     "lodash": "^4.17.21",
     "meshline": "^3.3.1",
-    "next": "^13.4.12",
+    "next": "^15.2.3",
     "node": "^20.19.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -60,7 +60,7 @@
     "tailwind-scrollbar": "^3.1.0",
     "three": "^0.166.1",
     "touch-cli": "^0.0.1",
-    "usehooks-ts": "^2.9.1"
+    "usehooks-ts": "^2.16.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",

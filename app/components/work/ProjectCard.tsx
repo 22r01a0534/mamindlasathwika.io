@@ -44,7 +44,7 @@ const ProjectCard = ({
                     angle={0}
                 >
                     <Image
-                        src={image}
+                        src={image || '/images/default.png'}
                         alt={name}
                         width={500}
                         height={500}
