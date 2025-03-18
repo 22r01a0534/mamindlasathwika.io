@@ -8,6 +8,7 @@ const nextConfig = {
   distDir: outputDir,
   reactStrictMode: true,
   output: 'export', 
+  trailingSlash: true, 
   basePath: '/mamindlasathwika.io',
   assetPrefix: '/mamindlasathwika.io/',
   images: {
