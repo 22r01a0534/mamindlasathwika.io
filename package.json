@@ -2,8 +2,8 @@
   "name": "portfolio-sathwika",
   "version": "1.0.0",
   "private": true,
-  "description": "https://22r01a0561.github.io/sairishikreddy.io/",
-  "homepage": "https://github.com/22r01a0534/sathwika-portfolio#readme",
+  "description": "https://22r01a0534.github.io/mamindlasathwika.io/",
+  "homepage": "https://github.com/22r01a0534/sathwika-portfolio",
   "bugs": {
     "url": "https://github.com/22r01a0534/sathwika-portfolio/issues"
   },
@@ -57,6 +57,7 @@
     "scroller-motion": "^1.2.3",
     "sharp": "^0.32.0",
     "tailwind-merge": "^2.6.0",
+    "tailwind-scrollbar": "^3.1.0",
     "three": "^0.166.1",
     "touch-cli": "^0.0.1",
     "usehooks-ts": "^2.9.1"
