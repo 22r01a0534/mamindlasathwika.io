@@ -26,11 +26,6 @@ const nextConfig = {
   devIndicators: {
     buildActivityPosition: "top-right",
   },
-  experimental: {
-    legacyBrowsers: false,
-    swcFileReading: true,
-    appDir: true,
-  },
   optimizeFonts: true,
   productionBrowserSourceMaps: isProduction,
   swcMinify: !isProduction,
