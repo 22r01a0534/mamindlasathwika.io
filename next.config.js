@@ -7,6 +7,7 @@ const outputDir = process.env.BRANCH === 'dev' ? 'dev' : '.next';
 const nextConfig = {
   distDir: outputDir,
   reactStrictMode: true,
+  output: 'export', 
   basePath: '/mamindlasathwika.io',
   assetPrefix: '/mamindlasathwika.io/',
   images: {
