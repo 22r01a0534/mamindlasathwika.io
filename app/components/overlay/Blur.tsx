@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Blue = () => {
+const Blur = () => {
     const [scrollOpacity, setScrollOpacity] = useState(1);
 
     const handleScroll = () => {
@@ -34,4 +34,4 @@ const Blue = () => {
     );
 };
 
-export default Blue;
+export default Blur;

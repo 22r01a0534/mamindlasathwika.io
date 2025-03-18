@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useEventListener } from 'usehooks-ts';
 import useBlobity from "../components/blobity/useBlobity";
-import Blue from "../components/overlay/Blue";
+import Blur from "../components/overlay/Blur";
 import Color from "../components/overlay/Color";
 import NavBar from "../sections/NavBar";
 import Hero from "../sections/Hero";
@@ -67,7 +67,7 @@ export default function Home() {
     return (
         <>
             <ScrollArea style={{ height: '100vh', overflowY: 'auto' }}>
-                <Blue/>
+                <Blur />
                 <Color />
                 <NavBar />
                 <main className="flex flex-col items-center justify-center bg-black">

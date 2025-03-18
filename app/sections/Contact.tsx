@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { inter } from "../fonts/inter";
-import "../animations/animation.css";
+import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedWords from "../animations/AnimatedWords";
@@ -38,7 +38,8 @@ const Contact = () => {
                     md:items-start md:text-left md:text-[16px] lg:w-[420px] lg:text-[16px]">
                         <AnimatedBody
                             text={
-                                "Hi there! I’m a recent graduate eager to make connections. I’d love to chat about any opportunities or projects we could collaborate on!"}
+                                "Hi! I'm a fresh graduate looking to connect. Would you like to discuss any opportunities or projects we could work on together?"
+                            }
                             className={
                                 "-mb-1 inline-block overflow-hidden pt-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
                             }
@@ -59,7 +60,7 @@ const Contact = () => {
                         <Link
                             href="https://github.com/22r01a0534"
                             target="_blank"
-                            aria-label="View GitHub Profile"
+                            aria-label="View My GitHub Profile"
                         >
                             <AnimatedTitle
                                 text={"GITHUB"}
@@ -73,10 +74,10 @@ const Contact = () => {
                         <Link
                             href="https://www.linkedin.com/in/sathwikamamindla/"
                             target="_blank"
-                            aria-label="View linkedin Profile"
+                            aria-label="View My linkedin Profile"
                         >
                             <AnimatedTitle
-                                text={"LINKEDIN "}
+                                text={"LINKEDIN"}
                                 className={
                                     "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
                                 }

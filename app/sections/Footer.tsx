@@ -25,7 +25,7 @@ const Footer = () => {
                         aria-label="Eldora UI Github"
                     >
                         <span className="underline underline-offset-2 hover:no-underline">
-                            <AnimatedBody text={"RISHIK"} className={"m-0 p-0"} />
+                            <AnimatedBody text={"M.Sathwika"} className={"m-0 p-0"} />
                         </span>{" "}
                     </Link>
                 </div>

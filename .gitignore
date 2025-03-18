@@ -3,12 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+.pnp.js
 
 # testing
 /coverage
@@ -16,6 +11,7 @@
 # next.js
 /.next/
 /out/
+/dev/
 
 # production
 /build
@@ -30,12 +26,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# local env files
+.env*.local
 
-# vercel
-.vercel
+# ide's
+.idea
+.vscode
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# node_modules
+node_modules

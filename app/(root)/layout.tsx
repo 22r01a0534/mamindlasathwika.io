@@ -12,7 +12,8 @@ const syne = Inter({
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.example.com/"),
     title: "Portfolio - sathwika",
-    description:"Welcome to my portfolio website! I’m currently pursuing my B.Tech and am passionate about connecting with like-minded individuals. Let’s discuss how we can collaborate on exciting projects!",
+    description:
+    "Welcome to my portfolio website! I’m currently pursuing my B.Tech and am passionate about connecting with like-minded individuals. Let’s discuss how we can collaborate on exciting projects!",
     generator: "Next.js",
     applicationName: "Portfolio",
     keywords: [
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Portfolio - sathwika",
         description:
-      "Welcome to my portfolio website! I’m currently pursuing my B.Tech and am passionate about connecting with like-minded individuals. Let’s discuss how we can collaborate on exciting projects!",
+            "Welcome to my portfolio website! I’m currently pursuing my B.Tech and am passionate about connecting with like-minded individuals. Let’s discuss how we can collaborate on exciting projects!",
         url: "https://www.sathwika.site/",
         siteName: "www.sathwika.site",
         images: [
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Portfolio - sathwika",
         description:
-      "Welcome to my portfolio website! I’m currently pursuing my B.Tech and am passionate about connecting with like-minded individuals. Let’s discuss how we can collaborate on exciting projects!",
+            "Welcome to my portfolio website! I’m currently pursuing my B.Tech and am passionate about connecting with like-minded individuals. Let’s discuss how we can collaborate on exciting projects!",
         creator: "@sathwika",
         creatorId: "0000000000",
         images: ["./public/metadata.jpg"],
@@ -83,16 +84,15 @@ export const metadata: Metadata = {
 type RootLayoutProps = {
   children: ReactNode;
 };
+
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <>
-            <html lang="en">
-                <body
-                    className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
-                >
-                    {children}
-                </body>
-            </html>
-        </>
+        <html lang="en">
+            <body
+                className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+            >
+                {children}
+            </body>
+        </html>
     );
 }

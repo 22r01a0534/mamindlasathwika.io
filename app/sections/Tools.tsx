@@ -1,18 +1,16 @@
 import React from "react";
-import "../animations/animation.css";
+import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import {
     SiGit,
     SiGithub,
-    SiFigma,
     SiHtml5,
     SiCsswizardry,
-    SiJavascript, 
-    SiNextdotjs,
-    SiReact, 
+    SiJavascript,
+    SiReact,
     SiTypescript,
-    SiMongodb,
+    SiMysql,
     SiNodedotjs,
     SiTailwindcss,
     SiExpress,
@@ -51,7 +49,6 @@ const Tools = () => {
                                 <SiTypescript size={50} className="hover:text-[#3178C6] transition-colors" />
                                 <SiJavascript size={50} className="hover:text-[#F7DF1E] transition-colors" />
                                 <SiReact size={50} className="hover:text-[#61DAFB] transition-colors" />
-                                <SiNextdotjs size={50} className="hover:text-[#ffffff] transition-colors" />
                                 <SiTailwindcss size={50} className="hover:text-[#06B6D4] transition-colors" />
                             </AnimatedTools>
                         </div>
@@ -62,7 +59,7 @@ const Tools = () => {
                         <AnimatedBody delay={0.3} text="Backend" />
                         <div>
                             <AnimatedTools className="grid grid-cols-5 gap-4" delay={0.3} stepSize={0.1} iconSize={50}>
-                                <SiMongodb size={50} className="hover:text-[#4DB33D] transition-colors" />
+                                <SiMysql size={50} className="hover:text-[#4DB33D] transition-colors" />
                                 <SiNodedotjs size={50} className="hover:text-[#68A063] transition-colors" />
                                 <SiExpress size={50} className="hover:text-[#ffffff ] transition-colors" />
                             </AnimatedTools>
@@ -76,7 +73,6 @@ const Tools = () => {
                             <AnimatedTools className="grid grid-cols-5 gap-4" delay={0.4} stepSize={0.1} iconSize={50}>
                                 <SiGithub size={50} className="hover:text-[#ffffff] transition-colors" />
                                 <SiGit size={50} className="hover:text-[#F05032] transition-colors" />
-                                <SiFigma size={50} className="hover:text-[#A259FF] transition-colors" />
                             </AnimatedTools>
                         </div>
                     </div>
