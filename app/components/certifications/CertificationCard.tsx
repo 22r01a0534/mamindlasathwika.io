@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import AnimatedTitle from "../../animations/AnimatedTitle";
 import { motion } from "framer-motion";
 import Container from "../container/Container";
 import React from "react";
