@@ -1,6 +1,6 @@
 import CertificationCard from "../components/certifications/CertificationCard";
 import { certifications } from "../components/certifications/certificationDetails";
-import HackerBackground from "../components/background/hackerbg";
+// import HackerBackground from "../components/background/hackerbg";
 import React from "react";
 
 const Certifications: React.FC = () => {
@@ -11,7 +11,7 @@ const Certifications: React.FC = () => {
             id="certifications"
         >
             <div className="absolute inset-0 opacity-20">
-                <HackerBackground />
+                {/* <HackerBackground /> */}
             </div>
 
             <h2 className="mb-10 text-[36px] text-[#e4ded7] md:mb-16 md:text-[42px] lg:mb-16 lg:text-[72px]">
@@ -24,7 +24,7 @@ const Certifications: React.FC = () => {
                         key={cert.id}
                         id={cert.id}
                         name={cert.name}
-                        image={cert.image}
+                        // image={cert.image}
                         link={cert.link}
                     />
                 ))}

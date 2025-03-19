@@ -16,7 +16,7 @@ import {
     SiExpress,
 } from "react-icons/si";
 import AnimatedTools from "../animations/AnimatedTools";
-import HackerBackground from "../components/background/hackerbg";
+// import HackerBackground from "../components/background/hackerbg";
 const Tools = () => {
     return (
         <section
@@ -25,7 +25,7 @@ const Tools = () => {
             id="tools"
         >
             <div className="absolute inset-0 opacity-100">
-                <HackerBackground />
+                {/* <HackerBackground /> */}
             </div>
             <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
                 <AnimatedTitle

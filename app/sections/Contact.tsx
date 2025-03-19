@@ -6,7 +6,7 @@ import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedWords from "../animations/AnimatedWords";
 import { motion } from "framer-motion";
 import React from "react";
-import HackerBackground from "../components/background/hackerbg";
+// import HackerBackground from "../components/background/hackerbg";
 const Contact = () => {
     return (
         <motion.section
@@ -17,7 +17,7 @@ const Contact = () => {
             animate="animate"
         >
             <div className="absolute inset-0 opacity-100">
-                <HackerBackground />
+                {/* <HackerBackground /> */}
             </div>
             <div className="mx-auto  flex w-[90%] flex-col items-center justify-center pt-10 md:pt-0">
                 <div

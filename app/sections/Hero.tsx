@@ -2,7 +2,7 @@ import { inter } from "../fonts/inter";
 import { motion } from "framer-motion";
 import React from "react";
 import AnimatedTitle from "../animations/AnimatedTitle";
-import HackerBackground from "../components/background/hackerbg";
+// import HackerBackground from "../components/background/hackerbg";
 import { SiCodechef, SiCodeforces, SiGeeksforgeeks, SiHackerrank, SiLeetcode } from 'react-icons/si';
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
         >
             {/* Background with lower z-index */}
             <div className="absolute inset-0 z-0 opacity-500">
-                <HackerBackground />
+                {/* <HackerBackground /> */}
             </div>
 
             {/* Content with higher z-index */}

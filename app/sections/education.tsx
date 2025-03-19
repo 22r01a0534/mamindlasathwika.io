@@ -2,7 +2,7 @@ import React from "react";
 import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
-import HackerBackground from "../components/background/hackerbg";
+// import HackerBackground from "../components/background/hackerbg";
 
 const Education = () => {
     return (
@@ -12,7 +12,7 @@ const Education = () => {
             id="education"
         >
             <div className="absolute inset-0 opacity-100">
-                <HackerBackground />
+                {/* <HackerBackground /> */}
                 <div className="absolute inset-0 bg-black opacity-40 z-[1]"></div>
             </div>
 

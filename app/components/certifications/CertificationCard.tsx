@@ -7,14 +7,14 @@ import React from "react";
 export type CertificationProps = {
     id: number;
     name: string;
-    image: string;
+    // image: string;
     link: string;
 };
 
 const CertificationCard: React.FC<CertificationProps> = ({
     id,
     name,
-    image,
+    // image,
     link
 }) => {
     return (
@@ -43,14 +43,14 @@ const CertificationCard: React.FC<CertificationProps> = ({
                         rel="noopener noreferrer"
                         aria-label={`View certificate for ${name}`}
                     >
-                        <Image
-                            src={image}
+                        {/* <Image
+                            // src={image}
                             alt={name}
                             layout="fill"
                             objectFit="cover"
                             className="rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                             priority={true}
-                        />
+                        /> */}
                     </Link>
 
                     <div
