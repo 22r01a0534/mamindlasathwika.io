@@ -31,7 +31,7 @@ export const projects = [
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
         github: "https://github.com/prashanthkallurii/Doctor-Patient-Appointment-System",
         demo: "https://example1.app/",
-        image: "/projects/Doctor and Patient Appointment System.jpeg",
+        image: "assets/images/Doctor and Patient Appointment System.jpeg",
         available: true,
     },
     // {
