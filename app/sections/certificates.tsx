@@ -24,7 +24,7 @@ const Certifications: React.FC = () => {
                         key={cert.id}
                         id={cert.id}
                         name={cert.name}
-                        // image={cert.image}
+                        image={cert.image}
                         link={cert.link}
                     />
                 ))}

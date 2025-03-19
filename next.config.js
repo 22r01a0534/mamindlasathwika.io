@@ -9,6 +9,7 @@ const nextConfig = {
   assetPrefix: "/mamindlasathwika.io/",
   distDir: outputDir,
   output: 'export',
+  trailingSlash: true,
   reactStrictMode: true,
   compiler: {
     reactRemoveProperties: isProduction,
