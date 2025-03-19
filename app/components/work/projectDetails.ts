@@ -25,13 +25,13 @@ export const projects = [
         id: 0,
         name: "The Doctor and Patient Appointment System",
         description:
-            "_",
+            " Developed a Doctor-Patient Appointment System with secure authentication, enabling patients to book, manage, and track appointments.Utilized HTML, CSS, and JavaScript, for efficient scheduling, notifications, and data management.Enhanced functionality with appointment reminders and admin controls for improved efficiency and security.",
         technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
         techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
         github: "https://github.com/prashanthkallurii/Doctor-Patient-Appointment-System",
         demo: "https://example1.app/",
-        image: "/Doctor and Patient Appointment System.jpeg",
+        image: "/projects/Doctor and Patient Appointment System.jpeg",
         available: true,
     },
     // {

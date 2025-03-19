@@ -5,6 +5,8 @@ const outputDir = process.env.BRANCH === 'dev' ? 'dev' : '.next';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/mamindlasathwika.io",
+  assetPrefix: "/mamindlasathwika.io/",
   distDir: outputDir,
   output: 'export',
   reactStrictMode: true,
