@@ -19,7 +19,7 @@ const CertificationCard: React.FC<CertificationProps> = ({
 }) => {
     return (
         <motion.div
-            className="group relative w-full max-w-[500px] h-auto border-2 border-transparent 
+            className="group relative w-[500px] h-[300px] border-2 border-transparent 
                 hover:border-[#e4ded7] hover:scale-105 transition-all duration-300 
                 rounded-xl overflow-hidden"
             initial={{ opacity: 0 }}
