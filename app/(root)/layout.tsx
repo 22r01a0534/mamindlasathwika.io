@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     icons: {
         icon: "./your/favicon.ico", // Correct favicon path
     },
+    viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
