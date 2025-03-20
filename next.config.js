@@ -21,6 +21,7 @@ const nextConfig = {
     experimental: {},
     productionBrowserSourceMaps: isProduction,
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: "https",
