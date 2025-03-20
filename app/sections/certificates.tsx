@@ -29,6 +29,7 @@ const Certifications: React.FC = () => {
                         link={cert.link}
                     />
                 ))}
+                
             </div>
         </section>
     );
