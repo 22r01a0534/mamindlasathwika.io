@@ -1,3 +1,5 @@
-export function generateStaticParams() {
-    return [];
+import { notFound } from "next/navigation";
+
+export default function NotFoundCatchAll() {
+    notFound();
 }
