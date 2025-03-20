@@ -7,7 +7,7 @@ const Certifications: React.FC = () => {
     return (
         <section
             className="relative z-10 flex w-full flex-col items-center justify-center bg-center py-16
-            md:py-20 lg:py-20"
+                        md:py-20 lg:py-20"
             id="certifications"
         >
             <div className="absolute inset-0 opacity-20">
@@ -18,6 +18,7 @@ const Certifications: React.FC = () => {
                 Certifications
             </h2>
 
+            {/* Grid Wrapper (Ensures Only One Grid Structure) */}
             <div className="grid w-[90%] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6 lg:max-w-[1200px]">
                 {certifications.map((cert) => (
                     <CertificationCard

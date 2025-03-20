@@ -10,18 +10,16 @@ const syne = Inter({
 });
 
 export const metadata: Metadata = {
-    // ...
     icons: {
-        icon: "/your/favicon.ico", // Update this path to your favicon
+        icon: "/favicon.ico", // Correct favicon path
     },
-    // ...
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="/your/favicon.ico" /> {/* Ensure this path is correct */}
+                <link rel="icon" href="/favicon.ico" />
             </head>
             <body className={`${syne.className} scroll-smooth scrollbar-none scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}>
                 {children}

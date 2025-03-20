@@ -18,10 +18,9 @@ const nextConfig = {
     devIndicators: {
         position: "top-right",
     },
-    experimental: {
-        // appDir: true, // Keeping appDir for compatibility
-    },
-    output: "export", // Important for static export builds
+    experimental: {},
+    output: "export",
+    trailingSlash: true,  // Important for static export builds
     productionBrowserSourceMaps: isProduction,
     images: {
         unoptimized: true, // Fix Image Optimization Error

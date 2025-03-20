@@ -19,12 +19,14 @@ const CertificationCard: React.FC<CertificationProps> = ({
 }) => {
     return (
         <motion.div
-            className="relative w-full"
+            className="group relative w-[500px] h-[300px] border-2 border-transparent 
+                hover:border-[#e4ded7] hover:scale-105 transition-all duration-300 
+                rounded-xl overflow-hidden"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
         >
             <motion.div
-                className="relative z-10 h-[400px] w-full"
+                className="relative z-10 w-full h-full"
             >
                 <Container
                     width="100%"
@@ -46,16 +48,17 @@ const CertificationCard: React.FC<CertificationProps> = ({
                         <Image
                             src={image}
                             alt={name}
-                            width={500} // Define width for static export compatibility
-                            height={300} // Define height for static export compatibility
-                            className="rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+                            width={500}
+                            height={300}
+                            className="rounded-lg cursor-pointer"
                             priority={true}
                         />
                     </Link>
 
-                    <div
-                        className={`absolute text-white bottom-4 w-full flex justify-center`}
-                    >
+                    {/* Certificate Name - Black Text for Better Visibility */}
+                    <div className="absolute bottom-2 left-2 text-black text-sm bg-white 
+                                    bg-opacity-90 px-2 py-1 rounded-md font-bold">
+                        {name}
                     </div>
                 </Container>
             </motion.div>
