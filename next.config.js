@@ -18,10 +18,13 @@ const nextConfig = {
     devIndicators: {
         position: "top-right",
     },
-    experimental: {},
+    experimental: {
+        // appDir: true, // Keeping appDir for compatibility
+    },
+    output: "export", // Important for static export builds
     productionBrowserSourceMaps: isProduction,
     images: {
-        unoptimized: true,
+        unoptimized: true, // Fix Image Optimization Error
         remotePatterns: [
             {
                 protocol: "https",

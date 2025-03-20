@@ -8,7 +8,10 @@ const syne = Inter({
     display: "block",
     weight: ["400", "500", "600", "700", "800"],
 });
-
+export const viewport = {
+    themeColor: "#000000",
+    colorScheme: "dark",
+};
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.example.com/"),
     title: "Portfolio - sathwika",
