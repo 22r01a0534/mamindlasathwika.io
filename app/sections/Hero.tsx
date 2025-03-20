@@ -24,7 +24,7 @@ const Hero = () => {
                     className={`relative flex flex-col items-center justify-center ${inter.className}`}
                 >
                     <AnimatedTitle
-                        text={"Hi I'm M.Sathwika."}
+                        text={"Hi I'm Mamindla Sathwika."}
                         className={
                             "mb-1 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
                         }
