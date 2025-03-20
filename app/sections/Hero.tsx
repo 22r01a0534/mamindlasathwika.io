@@ -42,7 +42,7 @@ const Hero = () => {
 
                     {/* Resume Button */}
                     <a
-                        href="https://drive.google.com/file/d/1u5eR1WJ405eMfoake5C0VhGV31WhSDY4/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1nQW08ACD-BoQsAyfpMxotN3iU94aoWZu/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-5 px-4 py-2 border-2 border-white text-white rounded hover:bg-white hover:text-black transition duration-300"
