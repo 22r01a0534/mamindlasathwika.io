@@ -9,6 +9,31 @@ import React from "react";
 import { SiGithub } from "react-icons/si";
 import { BsLink45Deg } from "react-icons/bs";
 
+// ===== Exact Official Brand Colors =====
+const techColors: Record<string, string> = {
+    React: "#61DAFB",
+    "Next.js": "#000000",
+    Python: "#3776AB",
+    JavaScript: "#F7DF1E",
+    TypeScript: "#3178C6",
+    Tailwind: "#38BDF8",
+    HTML: "#E34F26",
+    CSS: "#1572B6",
+    Node: "#339933",
+    MongoDB: "#47A248",
+    Git: "#F05032",
+    Express: "#000000",
+    Redux: "#764ABC",
+    Sass: "#CC6699",
+    Bootstrap: "#7952B3",
+    Firebase: "#FFCA28",
+    GraphQL: "#E10098",
+    Docker: "#2496ED",
+    AWS: "#FF9900",
+    Azure: "#0078D4",
+    Vite: "#646CFF"
+};
+
 const ProjectCard = ({
     id,
     name,
@@ -29,8 +54,8 @@ const ProjectCard = ({
         >
             <motion.div
                 className={`relative bg-cover bg-no-repeat bg-center z-10 h-full w-full 
-            items-stretch justify-center py-0 sm:h-[850px] sm:w-[100%] md:h-[750px] 
-            md:w-[100%] lg:h-[650px] lg:w-[100%]`}
+                items-stretch justify-center py-0 sm:h-[850px] sm:w-[100%] md:h-[750px] 
+                md:w-[100%] lg:h-[650px] lg:w-[100%]`}
             >
                 <Container
                     width="100%"
@@ -43,6 +68,7 @@ const ProjectCard = ({
                     left="0px"
                     angle={0}
                 >
+                    {/* Project Image */}
                     <div className="relative w-full h-full rounded-lg overflow-hidden">
                         <Image
                             src={image || '/images/default.png'}
@@ -54,6 +80,7 @@ const ProjectCard = ({
                         />
                     </div>
 
+                    {/* GitHub & Demo Buttons */}
                     <div
                         className={`absolute top-0 text-[#0E1016] ${id % 2 === 0 ?
                             "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
@@ -93,6 +120,7 @@ const ProjectCard = ({
                         )}
                     </div>
 
+                    {/* Title & Description */}
                     <div
                         className={`absolute text-white ${!(id % 2 === 0)
                             ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60 lg:mr-4"
@@ -113,24 +141,42 @@ const ProjectCard = ({
                                 "mt-4 w-[90%] max-w-[457px] text-[16px] font-bold text-white "
                             }
                         />
-                        <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
-                            {technologies.map((IconComponent, id) => (
-                                <div key={id} className="relative">
+                    </div>
+
+                    {/* Tech Icons at Bottom - Exact Colors */}
+                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-6">
+                        {technologies.map((IconComponent, idx) => {
+                            const color = techColors[techNames[idx]] || "white";
+                            return (
+                                <div key={idx} className="relative">
                                     <Link
-                                        href={techLinks[id]}
+                                        href={techLinks[idx]}
                                         target="_blank"
-                                        aria-label={`Learn more about ${techNames[id]}`}
-                                        className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] 
-                                        lg:w-[30px] lg:text-[28px]"
-                                        title={techLinks[id]}
-                                        data-blobity-tooltip={techNames[id]}
+                                        aria-label={`Learn more about ${techNames[idx]}`}
+                                        className="transition-transform hover:scale-125"
+                                        title={techLinks[idx]}
+                                        data-blobity-tooltip={techNames[idx]}
                                         data-blobity-magnetic="false"
                                     >
-                                        <IconComponent />
+                                        <div
+                                            style={{
+                                                backgroundColor: "rgba(0,0,0,0.5)",
+                                                borderRadius: "50%",
+                                                padding: "10px",
+                                                boxShadow: `0 0 10px ${color}, 0 0 20px ${color}`,
+                                                transition: "0.3s ease"
+                                            }}
+                                            className="hover:brightness-110"
+                                        >
+                                            <IconComponent
+                                                style={{ color }}
+                                                className="text-[28px] md:text-[32px] lg:text-[36px]"
+                                            />
+                                        </div>
                                     </Link>
                                 </div>
-                            ))}
-                        </div>
+                            );
+                        })}
                     </div>
                 </Container>
             </motion.div>

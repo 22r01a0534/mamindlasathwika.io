@@ -1,6 +1,7 @@
 import {
     SiFramer,
     SiNextdotjs,
+    SiPython,
     SiReact,
     SiTailwindcss,
     SiTypescript,
@@ -36,15 +37,15 @@ export const projects = [
     },
     {
         id: 1,
-        name: "Todo list",
+        name: "ToDo List",
         description:
-            "_",
-        technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
-        techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
-        techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
-        github: "https://github.com/22r01a0534",
+            "ToDo List – A smart and intuitive desktop task manager built with Python Tkinter that lets users add, edit, search, and sort tasks with optional due dates, light/dark themes, and automatic JSON‑based saving for persistent storage.",
+        technologies: [SiPython],
+        techNames: ["Python"],
+        techLinks: ["https://www.python.org/"],
+        github: "https://github.com/22r01a0534/ToDo",
         demo: "https://example2.app/",
-        image: "public/projects/project2.png",
+        image: "./projects/todo.png",
         available: true,
     },
 ];
